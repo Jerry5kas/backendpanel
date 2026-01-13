@@ -46,18 +46,17 @@
     <span class="animate-pulse text-xl font-semibold">Loading...</span>
 </div>
 
-<!-- Sidebar -->
+<!-- Header -->
+@include('components.landing.header')
 
-
-<!-- Main Content -->
-<main class="min-h-screen">
+<!-- Page Content -->
+<main>
     {{ $slot }}
 </main>
 
 <!-- Footer -->
-<footer class="bg-gray-100 dark:bg-gray-800 mt-10">
-    @includeIf('components.partials.footer')
-</footer>
+@include('components.landing.footer')
+
 
 <!-- Alpine JS -->
 <script
